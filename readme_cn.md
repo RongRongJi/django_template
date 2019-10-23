@@ -1,4 +1,4 @@
-#django快速开发模板
+# django快速开发模板
 
 > 2019-10-22
 
@@ -21,7 +21,7 @@
 ****
 
 ## 功能介绍
-###网页及路由
+### 网页及路由
 django项目中的html、css、js等文件存放在TestModel\templates中<br>
 project_template中的urls.py用来表示视图的信息。<br>
 ```python
@@ -36,7 +36,7 @@ urlpatterns = [
 TestModel中的views.py用来编写视图的具体内容，在示例中已提供了用户登录、登出、注册以及访问网页的相关代码<br>
 运行django之后，通过访问http://127.0.0.1:8000/hello来访问hello.html，打开成功即为部署成功<br>
 
-###请求处理
+### 请求处理
 TestModel中的views.py可以用来编写服务器接口的详细内容<br>
 ```python
 def alogin(request):
@@ -56,7 +56,7 @@ def alogin(request):
 request.method可以用来限定POST、GET等方法<br>
 函数的返回值为response，这里以json为例<br>
 
-###数据库操作
+### 数据库操作
 本模板选择mysql作为数据库<br>
 修改project_template中db.cfg配置文件，将数据库的配置改成自己的配置即可<br>
 
@@ -78,7 +78,7 @@ python manage.py migrate
 ```
 登录数据库，`show tables`可以看到表已建好<br>
 
-###定时任务
+### 定时任务
 本模板中的定时任务使用Celery<br>
 TestModel中的tasks.py用于编写各种定时任务，本模板提供发送邮件的定时任务作为实例<br>
 在编写定时函数时必须在函数前标注@shared_task<br>
@@ -90,7 +90,7 @@ python manage.py createsuperuser
 - 点击Periodic tasks可以添加已经编写好的定时任务
 - 点击Crontabs \ Intervals可以设置定时任务的时间
 
-###发送邮件
+### 发送邮件
 TestModel的tasks.py中已提供给发送邮件的示例<br>
 在project_template的settings.py中，需要根据自己的邮箱对配置进行修改<br>
 ```

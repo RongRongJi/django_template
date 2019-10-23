@@ -1,4 +1,4 @@
-#Django Rapid Development Template
+# Django Rapid Development Template
 
 > 2019-10-22
 
@@ -22,7 +22,7 @@ This project is a Django rapid development template, which contains modules such
 ****
 
 ## Function Introduction
-###Web Page & Routing
+### Web Page & Routing
 HTML, CSS, JS and other files in project are stored in `TestModel/templates` <br>
 `project_template/urls.py` is used to represent the view information. <br>
 ```python
@@ -37,7 +37,7 @@ urlpatterns = [
 `TestModel/views.py` is used to write the specific contents of views. In the example, it has provided the relevant codes for users to login, logout, registration and visit web pages. <br>
 After running Django server, you can access `TestModel/templates/hello.html` by visiting http://127.0.0.1:8000/hello . Successful opening means successful deployment. <br>
 
-###Reuqest Processing
+### Reuqest Processing
 `TestModel/views.py` can be used to write the details of the server interface.<br>
 ```python
 def alogin(request):
@@ -57,7 +57,7 @@ def alogin(request):
 `request.method` can be used to decide POST or GET. <br>
 The return value of the function is response. We take JSON for example.<br>
 
-###Database Operations
+### Database Operations
 In this template, MYSQL is selected as the database.<br>
 You can modify `project_template/db.cfg` to change the database settings to your own configuration.<br>
 
@@ -79,7 +79,7 @@ python manage.py migrate
 ```
 Log in to the database, and `show tables` to see that the tables have been built.<br>
 
-###Timing Task
+### Timing Task
 The timing task in this template use the Celery.<br>
 `TestModel/tasks.py` is used to write various timing tasks. This template provides the timing task of sending email as an example.<br>
 When writing a timing function, `@shared_task` must be marked above the function.<br>
@@ -91,7 +91,7 @@ Aftere creation, start the Django server, access http://127.0.0.1:8000/admin in 
 - Click Periodic Tasks to add the scheduled tasks that have been written
 - Click Crontabs \ Intervals to set the time of the scheduled tasks
 
-###Send E-Mail
+### Send E-Mail
 An example of sending email has been provided in `TestModel/tasks.py`.<br>
 In `project_template/settings.py` , you need to modify the configuration according to your own mailbox. <br>
 ```
