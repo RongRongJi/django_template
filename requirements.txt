@@ -1,6 +1,6 @@
 celery==5.2.2
 configparser==4.0.2
-Django==2.2.24
+Django==2.2.27
 django-celery==3.3.1
 mysqlclient==1.4.4
 Pillow==9.0.0
