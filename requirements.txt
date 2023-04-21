@@ -6,4 +6,4 @@ mysqlclient==1.4.4
 Pillow==9.3.0
 pytz==2019.3
 requests==2.22.0
-sqlparse==0.3.0
+sqlparse==0.4.4
