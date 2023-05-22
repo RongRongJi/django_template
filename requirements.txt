@@ -5,5 +5,5 @@ django-celery==3.3.1
 mysqlclient==1.4.4
 Pillow==9.3.0
 pytz==2019.3
-requests==2.22.0
+requests==2.31.0
 sqlparse==0.4.4
